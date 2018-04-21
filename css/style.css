@@ -1,0 +1,924 @@
+@charset "UTF-8";
+/* line 1, ../sass/_reset.sass */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 8, ../sass/_reset.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 11, ../sass/_reset.sass */
+body {
+  line-height: 1;
+}
+
+/* line 14, ../sass/_reset.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 17, ../sass/_reset.sass */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 21, ../sass/_reset.sass */
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 26, ../sass/_reset.sass */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../sass/_reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 33, ../sass/_reset.sass */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 2 */
+/* Sections
+ * ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated). */
+/* line 46, ../sass/_reset.sass */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-. */
+/* line 51, ../sass/_reset.sass */
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari. */
+/* line 57, ../sass/_reset.sass */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE. */
+/* line 67, ../sass/_reset.sass */
+figcaption, figure, main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8. */
+/* line 73, ../sass/_reset.sass */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE. */
+/* line 79, ../sass/_reset.sass */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+}
+
+/* 2 */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers. */
+/* line 90, ../sass/_reset.sass */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+}
+
+/* 2 */
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+. */
+/* line 101, ../sass/_reset.sass */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+}
+
+/* 2 */
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+/* line 110, ../sass/_reset.sass */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+}
+
+/* 2 */
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
+/* line 120, ../sass/_reset.sass */
+b, strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari. */
+/* line 125, ../sass/_reset.sass */
+b, strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers. */
+/* line 131, ../sass/_reset.sass */
+code, kbd, samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+}
+
+/* 2 */
+/**
+ * Add the correct font style in Android 4.3-. */
+/* line 139, ../sass/_reset.sass */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-. */
+/* line 144, ../sass/_reset.sass */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers. */
+/* line 150, ../sass/_reset.sass */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers. */
+/* line 156, ../sass/_reset.sass */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 162, ../sass/_reset.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 165, ../sass/_reset.sass */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-. */
+/* line 172, ../sass/_reset.sass */
+audio, video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7. */
+/* line 177, ../sass/_reset.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-. */
+/* line 183, ../sass/_reset.sass */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE. */
+/* line 188, ../sass/_reset.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+ * ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari. */
+/* line 196, ../sass/_reset.sass */
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+}
+
+/* 2 */
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge. */
+/* line 209, ../sass/_reset.sass */
+button, input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox. */
+/* line 216, ../sass/_reset.sass */
+button, select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari. */
+/* line 224, ../sass/_reset.sass */
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* 2 */
+/**
+ * Remove the inner border and padding in Firefox. */
+/* line 230, ../sass/_reset.sass */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule. */
+/* line 236, ../sass/_reset.sass */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox. */
+/* line 241, ../sass/_reset.sass */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers. */
+/* line 249, ../sass/_reset.sass */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+}
+
+/* 1 */
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+/* line 266, ../sass/_reset.sass */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+}
+
+/* 2 */
+/**
+ * Remove the default vertical scrollbar in IE. */
+/* line 274, ../sass/_reset.sass */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-. */
+/* line 280, ../sass/_reset.sass */
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+}
+
+/* 2 */
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome. */
+/* line 289, ../sass/_reset.sass */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari. */
+/* line 295, ../sass/_reset.sass */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/* line 300, ../sass/_reset.sass */
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS. */
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari. */
+/* line 308, ../sass/_reset.sass */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+}
+
+/* 2 */
+/* Interactive
+ * ========================================================================== */
+/* Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox. */
+/* line 319, ../sass/_reset.sass */
+details, menu {
+  display: block;
+}
+
+/* Add the correct display in all browsers. */
+/* line 324, ../sass/_reset.sass */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-. */
+/* line 331, ../sass/_reset.sass */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE. */
+/* line 336, ../sass/_reset.sass */
+template, [hidden] {
+  display: none;
+}
+
+/* Hidden
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 10-. */
+/* line 1, ../sass/_common.sass */
+body {
+  background: #f2f2f2;
+  display: table;
+  width: 100%;
+}
+
+/* line 5, ../sass/_common.sass */
+.container {
+  width: 100%;
+  font-family: Helvetica, Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "黑體-繁", "Heiti TC", "Meiryo UI", "Microsoft YaHei UI", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+  margin: 0 auto;
+  height: 100%;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* line 1, ../sass/_header.sass */
+.header {
+  width: 100%;
+  background: url("../images/taipei.jpg") no-repeat top center;
+  background-size: cover;
+  height: 500px;
+}
+/* line 7, ../sass/_header.sass */
+.header .header-title {
+  padding: 90px 0;
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 3.89px;
+  text-align: center;
+}
+/* line 14, ../sass/_header.sass */
+.header .select-container {
+  text-align: center;
+}
+/* line 17, ../sass/_header.sass */
+.header .select-container .AR {
+  width: 452px;
+  padding: 8px 11px 8px 9.5px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  border: 3px solid #FFFFFF;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.7);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+/* line 32, ../sass/_header.sass */
+.header .select-wrap {
+  position: relative;
+  display: inline-block;
+}
+/* line 36, ../sass/_header.sass */
+.header .select-wrap svg {
+  position: absolute;
+  right: 14px;
+  top: 7px;
+  font-size: 30px;
+}
+/* line 42, ../sass/_header.sass */
+.header .header-hotAR {
+  box-sizing: border-box;
+  margin: 160px auto 0 auto;
+  padding: 20px 26px;
+  max-width: 800px;
+  background: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+/* line 51, ../sass/_header.sass */
+.header .header-hotAR .header-hotAR-title {
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+}
+/* line 57, ../sass/_header.sass */
+.header .header-hotAR-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 14px 0 0 0;
+}
+/* line 64, ../sass/_header.sass */
+.header .header-hotAR-list .header-hotAR-list-li {
+  font-size: 20px;
+  padding: 11px 35px;
+  color: #FFFFFF;
+  background: #818181;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* line 74, ../sass/_header.sass */
+.header .header-hotAR-list .purple {
+  background: #8A82CC;
+}
+/* line 77, ../sass/_header.sass */
+.header .header-hotAR-list .purple:hover {
+  filter: saturate(200%);
+}
+/* line 80, ../sass/_header.sass */
+.header .header-hotAR-list .pink {
+  background: #FFA782;
+}
+/* line 83, ../sass/_header.sass */
+.header .header-hotAR-list .pink:hover {
+  filter: saturate(200%);
+}
+/* line 86, ../sass/_header.sass */
+.header .header-hotAR-list .yellow {
+  background: #F5D105;
+}
+/* line 89, ../sass/_header.sass */
+.header .header-hotAR-list .yellow:hover {
+  filter: saturate(200%);
+}
+/* line 91, ../sass/_header.sass */
+.header .header-hotAR-list .blue {
+  background: #559AC8;
+}
+/* line 94, ../sass/_header.sass */
+.header .header-hotAR-list .blue:hover {
+  filter: saturate(200%);
+}
+
+/* line 3, ../sass/_indexContent.sass */
+.content .totalList .list-title {
+  text-align: center;
+  margin: 65px 0 24px 0;
+  font-size: 36px;
+  color: #bdbdbd;
+}
+/* line 8, ../sass/_indexContent.sass */
+.content .totalList .list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+}
+/* line 15, ../sass/_indexContent.sass */
+.content .totalList .list .list-box {
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  flex: 0 0 48%;
+  margin-bottom: 36px;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+/* line 22, ../sass/_indexContent.sass */
+.content .totalList .list .list-box:hover {
+  -moz-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+  transition-timing-function: linear;
+}
+/* line 27, ../sass/_indexContent.sass */
+.content .totalList .list .list-box .list-img {
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 240px;
+  padding: 14px 22px;
+  position: relative;
+}
+/* line 34, ../sass/_indexContent.sass */
+.content .totalList .list .list-box .list-img .list-box-titleWrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.8;
+  color: #fff;
+}
+/* line 41, ../sass/_indexContent.sass */
+.content .totalList .list .list-box .list-img .list-box-titleWrap .list-box-title {
+  background: #064b6c linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* line 47, ../sass/_indexContent.sass */
+.content .totalList .list .list-box .list-img .list-box-titleWrap .list-box-title h3 {
+  font-size: 24px;
+}
+/* line 49, ../sass/_indexContent.sass */
+.content .totalList .list .list-box .list-img .list-box-titleWrap .list-box-title h2 {
+  font-weight: 700;
+  font-size: 16px;
+}
+/* line 52, ../sass/_indexContent.sass */
+.content .totalList .list .list-box ul {
+  margin: 15px 24px;
+}
+/* line 54, ../sass/_indexContent.sass */
+.content .totalList .list .list-box ul li {
+  line-height: 1.5;
+}
+/* line 56, ../sass/_indexContent.sass */
+.content .totalList .list .list-box ul li:not(:first-child) {
+  margin-top: 10px;
+}
+/* line 58, ../sass/_indexContent.sass */
+.content .totalList .list .list-box ul li svg {
+  margin-right: 5px;
+  display: inline-block;
+  width: 20px;
+}
+/* line 62, ../sass/_indexContent.sass */
+.content .totalList .list .list-box ul li .list-li-detail {
+  display: inline-block;
+  width: 90%;
+  vertical-align: top;
+}
+/* line 66, ../sass/_indexContent.sass */
+.content .totalList .list .list-box ul li .list-li-detail a {
+  text-decoration: none;
+  color: #007fbb;
+}
+/* line 69, ../sass/_indexContent.sass */
+.content .totalList .list .list-box ul li .read-more-wrap {
+  cursor: pointer;
+}
+/* line 71, ../sass/_indexContent.sass */
+.content .totalList .list .list-box ul li img {
+  vertical-align: middle;
+  padding-right: 12px;
+}
+/* line 74, ../sass/_indexContent.sass */
+.content .content-page {
+  text-align: center;
+  font-size: 14px;
+  margin: 14px 0 40px 0;
+}
+/* line 78, ../sass/_indexContent.sass */
+.content .content-page a {
+  color: #4a4a4a;
+  padding: 5px;
+  margin-left: 11px;
+}
+/* line 82, ../sass/_indexContent.sass */
+.content .content-page .prev {
+  margin-right: 10px;
+}
+/* line 84, ../sass/_indexContent.sass */
+.content .content-page .next {
+  margin-left: 21px;
+}
+
+/* line 86, ../sass/_indexContent.sass */
+* {
+  -moz-transition-property: box-shadow;
+  -o-transition-property: box-shadow;
+  -webkit-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -webkit-transform;
+  transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, transform;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+/* line 103, ../sass/_indexContent.sass */
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+/* line 109, ../sass/_indexContent.sass */
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(41, 41, 41, 0.75);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  overflow: scroll;
+}
+/* line 123, ../sass/_indexContent.sass */
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+/* line 126, ../sass/_indexContent.sass */
+.modal-wrapper.open .modal {
+  margin-top: -20px;
+  opacity: 1;
+}
+/* line 129, ../sass/_indexContent.sass */
+.modal-wrapper.close {
+  opacity: 0;
+}
+/* line 131, ../sass/_indexContent.sass */
+.modal-wrapper .modal {
+  width: 800px;
+  height: auto;
+  display: block;
+  margin: 50% auto 0 auto;
+  position: relative;
+  top: 50px;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 145, ../sass/_indexContent.sass */
+.modal-wrapper .modal .modal-content {
+  padding: 15px 5px;
+  line-height: 1.5;
+}
+/* line 148, ../sass/_indexContent.sass */
+.modal-wrapper .modal .modal-head {
+  width: 100%;
+  padding: 17px 0;
+  overflow: hidden;
+  font-size: 22px;
+  text-align: center;
+  background: #064b6c;
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  opacity: 0.9;
+}
+/* line 160, ../sass/_indexContent.sass */
+.modal-wrapper .modal .modal-head .modal-title {
+  padding: 0 25px;
+  color: #fff;
+}
+/* line 163, ../sass/_indexContent.sass */
+.modal-wrapper .modal a.btn-close {
+  width: auto;
+  display: block;
+  margin: 0;
+  padding: 1em 0;
+  position: absolute;
+  top: -17px;
+  right: -40px;
+  font: 1.125em "Arial", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 177, ../sass/_indexContent.sass */
+.modal-wrapper .modal a.btn-close::before, .modal-wrapper .modal a.btn-close::after {
+  content: "";
+  width: 32px;
+  height: 6px;
+  display: block;
+  background: #fff;
+}
+/* line 183, ../sass/_indexContent.sass */
+.modal-wrapper .modal a.btn-close::before {
+  margin-top: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 189, ../sass/_indexContent.sass */
+.modal-wrapper .modal a.btn-close::after {
+  margin-top: -6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 195, ../sass/_indexContent.sass */
+.carousel, .carousel-inner, .carousel-inner .item {
+  height: 400px !important;
+}
+
+/* line 197, ../sass/_indexContent.sass */
+.img-responsive, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+}
+
+/* line 199, ../sass/_indexContent.sass */
+.fa-chevron-right, .fa-chevron-left {
+  font-size: 40px;
+  position: absolute;
+  top: 200px;
+}
+
+/* line 203, ../sass/_indexContent.sass */
+.carousel-indicators li {
+  margin-left: 5px;
+}
+
+/* line 205, ../sass/_indexContent.sass */
+.content-description {
+  padding: 0px 20px 12px 20px;
+  text-indent: 40px;
+}
+
+/* line 211, ../sass/_indexContent.sass */
+.modal-content-block ul li .modal-content-li {
+  width: 90%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 215, ../sass/_indexContent.sass */
+.modal-content-block ul li svg {
+  text-align: right;
+  width: 36px !important;
+  margin-left: 10px;
+}
+
+/* line 1, ../sass/_footer.sass */
+.footer {
+  text-align: center;
+  background: #004da0;
+  display: table-row;
+  height: 60px;
+}
+/* line 6, ../sass/_footer.sass */
+.footer .footer-wrap {
+  padding: 20px 0;
+}
+/* line 8, ../sass/_footer.sass */
+.footer .footer-wrap h2 {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+/* line 12, ../sass/_footer.sass */
+.footer .footer-wrap h3 {
+  font-size: 14px;
+  color: #FFD366;
+}
+
+/* line 16, ../sass/_footer.sass */
+html,
+body {
+  height: 100%;
+}

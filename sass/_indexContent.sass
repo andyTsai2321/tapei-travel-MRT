@@ -1,0 +1,218 @@
+.content
+	.totalList 
+		.list-title 
+			text-align: center
+			margin: 65px 0 24px 0
+			font-size: 36px
+			color: rgb(189, 189, 189)
+		.list
+			display: flex 
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			width: 1000px
+			margin: 0 auto
+			.list-box
+				background: #FFFFFF
+				box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.20)
+				flex: 0 0 48%
+				margin-bottom: 36px
+				transition-timing-function: linear
+				cursor: pointer
+				&:hover
+					-moz-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px
+					-webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px
+					box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px
+					transition-timing-function: linear
+				.list-img
+					background-size: cover
+					background-position: center
+					max-width: 100%
+					height: 240px
+					padding: 14px 22px
+					position: relative
+					.list-box-titleWrap
+						position: absolute
+						bottom: 0
+						left: 0
+						width: 100%
+						opacity: .8
+						color: #fff
+						.list-box-title
+							background: #064b6c linear-gradient(hsla(0,0%,100%,.2),transparent)
+							padding: 15px
+							display: flex
+							justify-content: space-between
+							align-items: flex-end
+							h3
+								font-size: 24px
+							h2
+								font-weight: 700
+								font-size: 16px
+				ul
+					margin: 15px 24px
+					li
+						line-height: 1.5
+						&:not(:first-child)
+							margin-top: 10px
+						svg
+							margin-right: 5px
+							display: inline-block
+							width: 20px
+						.list-li-detail
+							display: inline-block
+							width: 90%
+							vertical-align: top
+							a
+								text-decoration: none
+								color: #007fbb
+						.read-more-wrap
+							cursor: pointer
+						img
+							vertical-align: middle
+							padding-right: 12px
+	.content-page
+		text-align: center
+		font-size: 14px
+		margin: 14px 0 40px 0
+		a
+			color: #4a4a4a
+			padding: 5px
+			margin-left: 11px
+		.prev
+			margin-right: 10px
+		.next
+			margin-left: 21px
+*
+	-moz-transition-property: box-shadow
+	-o-transition-property: box-shadow
+	-webkit-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -webkit-transform
+	transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, transform
+	-moz-transition-duration: 0.2s
+	-o-transition-duration: 0.2s
+	-webkit-transition-duration: 0.2s
+	transition-duration: 0.2s
+	-moz-transition-timing-function: linear
+	-o-transition-timing-function: linear
+	-webkit-transition-timing-function: linear
+	transition-timing-function: linear
+
+
+//詳細資料彈出視窗
+
+.blur
+	-webkit-filter: blur(5px)
+	-moz-filter: blur(5px)
+	-o-filter: blur(5px)
+	-ms-filter: blur(5px)
+	filter: blur(5px)
+.modal-wrapper
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	background: rgba(41, 41, 41, 0.75)
+	visibility: hidden
+	opacity: 0
+	-webkit-transition: all 2s ease-in-out
+	-moz-transition: all 0.25s ease-in-out
+	-o-transition: all 0.25s ease-in-out
+	transition: all 0.25s ease-in-out
+	overflow: scroll
+	&.open
+		opacity: 1
+		visibility: visible
+		.modal
+			margin-top: -20px
+			opacity: 1
+	&.close
+		opacity: 0
+	.modal
+		width: 800px
+		height: auto
+		display: block
+		margin: 50% auto 0 auto
+		position: relative
+		top: 50px
+		// left: 50%
+		background: #fff
+		opacity: 0
+		-webkit-transition: all 0.5s ease-in-out
+		-moz-transition: all 0.5s ease-in-out
+		-o-transition: all 0.5s ease-in-out
+		transition: all 0.5s ease-in-out
+		.modal-content
+			padding: 15px 5px
+			line-height: 1.5
+		.modal-head
+			width: 100%
+			// height: 32px
+			padding: 17px 0
+			overflow: hidden
+			font-size: 22px
+			text-align: center
+			background: #064b6c
+			position: absolute
+			top: 0
+			z-index: 9
+			opacity: .9
+			.modal-title
+				padding: 0 25px
+				color: #fff
+		a.btn-close
+			width: auto
+			display: block
+			margin: 0
+			padding: 1em 0
+			position: absolute
+			top: -17px
+			right: -40px
+			font: 1.125em 'Arial', sans-serif
+			font-weight: 700
+			text-align: center
+			text-decoration: none
+			color: #fff
+			cursor: pointer
+			&::before, &::after
+				content: ''
+				width: 32px
+				height: 6px
+				display: block
+				background: #fff
+			&::before
+				margin-top: 12px
+				-webkit-transform: rotate(45deg)
+				-moz-transform: rotate(45deg)
+				-o-transform: rotate(45deg)
+				transform: rotate(45deg)
+			&::after
+				margin-top: -6px
+				-webkit-transform: rotate(-45deg)
+				-moz-transform: rotate(-45deg)
+				-o-transform: rotate(-45deg)
+				transform: rotate(-45deg)
+.carousel, .carousel-inner, .carousel-inner .item
+	height: 400px !important	
+.img-responsive, .carousel-inner > .item > img, .carousel-inner > .item > a > img
+	width: 100%
+.fa-chevron-right, .fa-chevron-left
+	font-size: 40px
+	position: absolute
+	top: 200px
+.carousel-indicators li
+	margin-left: 5px
+.content-description
+	padding: 0px 20px 12px 20px
+	text-indent: 40px
+.modal-content-block
+	ul
+		li
+			.modal-content-li
+				width: 90%
+				display: inline-block
+				vertical-align: top
+			svg
+				text-align: right
+				width: 36px !important
+				margin-left: 10px

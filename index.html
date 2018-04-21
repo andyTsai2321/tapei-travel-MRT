@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="http://data.ntpc.gov.tw/">
+    <meta content="text/html; charset=UTF-8; x-content-type-options:nosniff" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>travel web</title> 
+    <style>
+  .carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
+.item:nth-child(1) {
+  background: #74C390;
+}
+.item:nth-child(2) {
+  background: #51BCE8;
+}
+.item:nth-child(3) {
+  background: #E46653;
+}
+
+</style>
+</head>
+<body class="loading">
+
+  <div id="test"></div>
+    <div class="container">
+        <header class="header">
+            <div class="header-title">
+                <h3>台北市旅遊景點-捷運走透透</h1>
+            </div>
+            <div class="select-container">
+                <form class="select-wrap">
+                    <select class="AR" id="ARId" name="AdministrativeRegion">
+                    </select>
+                    <i class="fas fa-angle-down"></i>
+                </form>
+            </div>
+            <div class="header-hotAR"> 
+                <div class="header-hotAR-title">
+                    熱門捷運站
+                </div>
+                <ul class="header-hotAR-list" id="hotARList">
+                    <li>
+                        <input type="button" class="header-hotAR-list-li purple" value="中山">
+                    </li>
+                    <li>
+                        <input type="button" class="header-hotAR-list-li pink" value="台北101／世貿">
+                    </li>
+                    <li>
+                        <input type="button" class="header-hotAR-list-li yellow" value="西門">
+                    </li>
+                    <li>
+                        <input type="button" class="header-hotAR-list-li blue" value="劍潭">
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="content">
+            <div class="totalList">
+                <div class="list-title" id="listTitle"></div>
+                <ul class="list" id="list">
+                    <!-- <li class="list-box">
+                        <div class="list-img">
+                            <div class="list-box-titleWrap">
+                                <div class="list-box-title">
+                                    <h3>高雄願景館</h3>
+                                    <h2>三民區</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li ><img src="images/icons_clock.png" alt="">週二至週日10:00-18:00，每週一公休</li>
+                            <li ><img src="images/icons_pin.png" alt="">高雄市三民區建國二路318號</li>
+                            <li class="left-li"><img src="images/icons_phone.png" alt="">886-7-2363357</li>
+                            <li class="right-li"><img src="images/icons_tag.png" alt="">免費參觀</li>
+                        </ul>
+                    </li> -->
+                  
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-wrap">
+            <h2>資料來源：臺北市政府 </h3>
+            <h3>作者：Andy Tsai</h3>
+        </div>
+    </footer>
+    <div class="page-mask">
+</div>
+<div id="detail">
+</div>
+  <script defer src="js/jquery.flexslider.js"></script>
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+
+<script type="text/javascript">
+$(document).on('click', '.list-box', function() {
+$('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+        }
+      });    
+});
+
+
+  </script>
+
+</body>
+
+</html>
