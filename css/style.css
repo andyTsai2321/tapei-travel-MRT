@@ -894,6 +894,79 @@ body {
   margin-left: 10px;
 }
 
+/* line 221, ../sass/_indexContent.sass */
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+  opacity: 0;
+}
+/* line 224, ../sass/_indexContent.sass */
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+/* line 225, ../sass/_indexContent.sass */
+.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+/* line 228, ../sass/_indexContent.sass */
+.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+/* line 230, ../sass/_indexContent.sass */
+.carousel-fade .carousel-inner .next, .carousel-fade .carousel-inner .prev {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 235, ../sass/_indexContent.sass */
+.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 239, ../sass/_indexContent.sass */
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* line 242, ../sass/_indexContent.sass */
+.carousel {
+  height: 100%;
+}
+
+/* line 245, ../sass/_indexContent.sass */
+.carousel-inner {
+  height: 100%;
+}
+/* line 247, ../sass/_indexContent.sass */
+.carousel-inner .item {
+  height: 100%;
+}
+
+/* line 251, ../sass/_indexContent.sass */
+.item:nth-child(1) {
+  background: #74C390;
+}
+/* line 253, ../sass/_indexContent.sass */
+.item:nth-child(2) {
+  background: #51BCE8;
+}
+/* line 255, ../sass/_indexContent.sass */
+.item:nth-child(3) {
+  background: #E46653;
+}
+
+@media (max-width: 1000px) {
+  /* line 5, ../sass/_responsive.sass */
+  .content .totalList .list {
+    width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  /* line 10, ../sass/_responsive.sass */
+  .content .totalList .list {
+    flex-direction: column;
+  }
+}
 /* line 1, ../sass/_footer.sass */
 .footer {
   text-align: center;
