@@ -437,18 +437,24 @@ template, [hidden] {
 /**
  * Add the correct display in IE 10-. */
 /* line 1, ../sass/_common.sass */
+html,
 body {
-  background: #f2f2f2;
-  display: table;
-  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* line 5, ../sass/_common.sass */
+/* line 6, ../sass/_common.sass */
+body {
+  background: #f2f2f2;
+  font-family: Helvetica, Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "黑體-繁", "Heiti TC", "Meiryo UI", "Microsoft YaHei UI", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+/* line 9, ../sass/_common.sass */
 .container {
   width: 100%;
-  font-family: Helvetica, Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "黑體-繁", "Heiti TC", "Meiryo UI", "Microsoft YaHei UI", "微軟正黑體", "Microsoft JhengHei", sans-serif;
   margin: 0 auto;
-  height: 100%;
+  flex: 1;
 }
 
 @-webkit-keyframes pulse {
@@ -955,6 +961,14 @@ body {
   background: #E46653;
 }
 
+/* line 257, ../sass/_indexContent.sass */
+.map-style {
+  width: 90%;
+  margin-left: 24px;
+  height: 500px;
+  display: inline-block;
+}
+
 @media (max-width: 1000px) {
   /* line 5, ../sass/_responsive.sass */
   .content .totalList .list {
@@ -971,27 +985,19 @@ body {
 .footer {
   text-align: center;
   background: #004da0;
-  display: table-row;
-  height: 60px;
 }
-/* line 6, ../sass/_footer.sass */
+/* line 4, ../sass/_footer.sass */
 .footer .footer-wrap {
   padding: 20px 0;
 }
-/* line 8, ../sass/_footer.sass */
+/* line 6, ../sass/_footer.sass */
 .footer .footer-wrap h2 {
   margin-bottom: 15px;
   font-size: 14px;
   color: #FFFFFF;
 }
-/* line 12, ../sass/_footer.sass */
+/* line 10, ../sass/_footer.sass */
 .footer .footer-wrap h3 {
   font-size: 14px;
   color: #FFD366;
-}
-
-/* line 16, ../sass/_footer.sass */
-html,
-body {
-  height: 100%;
 }

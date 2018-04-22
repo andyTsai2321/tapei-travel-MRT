@@ -68,6 +68,7 @@ function sliceUrl(str) {
     return arr
 }
 
+
 //同步更新網頁
 function updatedList(e) {
     let str = '';
@@ -112,6 +113,10 @@ function updatedList(e) {
                 var dataInfo = dataResult[i].info || noDataText;
                 var dataOpenTime = dataResult[i].MEMO_TIME || noDataText;
                 var dataAddress = dataResult[i].address || noDataText;
+                var dataMapLat = dataResult[i].latitude;
+                var dataMapLng = dataResult[i].longitude;
+                console.log(typeof dataMapLat)
+                var map;
                 popup += `
                             <div class="modal-wrapper">
                               <div class="modal">
@@ -138,13 +143,30 @@ function updatedList(e) {
                                             <li><i class="fas fa-clock"></i><span class="modal-content-li">${dataOpenTime}</span></li>
                                             <li><i class="fas fa-map-marker-alt"></i><span class="modal-content-li">${dataAddress}</span></li>
                                             <li><i class="fas fa-subway"></i><span class="modal-content-li">${dataInfo}</span></li>
+                                            <li><span id="map" class="map-style"></span></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                           </div>
                     `
+                var xhr = new XMLHttpRequest();
+                xhr.open('get', 'js/googleApi.js', true);
+                xhr.send(null);
+                xhr.onload = function() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: Number(dataMapLat), lng: Number(dataMapLng)},
+                        zoom: 14
+                    });
+
+                    var marker = new google.maps.Marker({
+                        position: {lat: Number(dataMapLat), lng: Number(dataMapLng)},
+                        map: map,
+                        title: 'test',
+                    })
+                }
             }
+
         }
         detail.innerHTML = popup;
 
