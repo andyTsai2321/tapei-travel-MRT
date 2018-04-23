@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta content="text/html; charset=UTF-8; x-content-type-options:nosniff" http-equiv="Content-Type" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style.css">
     <title>台北捷運走透透</title>
 </head>
+
 <body>
-<div class="container">
-    <header class="header">
-        <div class="header-title">
-            <h3>台北市旅遊景點-捷運走透透</h3>
-        </div>
-        <div class="select-container">
-            <form class="select-wrap">
-                <select class="AR" id="ARId" name="AdministrativeRegion">
-                </select>
-                <i class="fas fa-angle-down"></i>
-            </form>
-        </div>
-        <div class="header-hotAR">
-            <div class="header-hotAR-title">
-                熱門捷運站
+    <div class="container">
+        <header class="header">
+            <div class="header-title">
+                <h3>台北市旅遊景點<span class="xs-hide">-</span><span class="xs-block">捷運走透透</span> </h3>
             </div>
-            <ul class="header-hotAR-list" id="hotARList">
-                <li>
-                    <input type="button" class="header-hotAR-list-li purple" value="中山">
-                </li>
-                <li>
-                    <input type="button" class="header-hotAR-list-li pink" value="台北101／世貿">
-                </li>
-                <li>
-                    <input type="button" class="header-hotAR-list-li yellow" value="西門">
-                </li>
-                <li>
-                    <input type="button" class="header-hotAR-list-li blue" value="劍潭">
-                </li>
-            </ul>
-        </div>
-    </header>
-    <section class="content">
-        <div class="totalList">
-            <div class="list-title" id="listTitle"></div>
-            <ul class="list" id="list">
-            </ul>
-        </div>
-    </section>
-</div>
-<footer class="footer">
-    <div class="footer-wrap">
-        <h3>資料來源：臺北市政府 </h3>
-        <h3>作者：Andy Tsai</h3>
+            <div class="select-container">
+                <form class="select-wrap">
+                    <select class="AR" id="ARId" name="AdministrativeRegion">
+                    </select>
+                    <i class="fas fa-angle-down"></i>
+                </form>
+            </div>
+            <div class="header-hotAR">
+                <div class="header-hotAR-title">
+                    熱門捷運站
+                </div>
+                <ul class="header-hotAR-list" id="hotARList">
+                    <div class="header-both-li">
+                        <li>
+                            <input type="button" class="header-hotAR-list-li purple" value="中山">
+                        </li>
+                        <li>
+                            <input type="button" class="header-hotAR-list-li pink" value="台北101／世貿">
+                        </li>
+                    </div>
+                    <div class="header-both-li">
+                        <li>
+                            <input type="button" class="header-hotAR-list-li yellow" value="西門">
+                        </li>
+                        <li>
+                            <input type="button" class="header-hotAR-list-li blue" value="劍潭">
+                        </li>
+                    </div>
+                
+                </ul>
+            </div>
+        </header>
+        <section class="content">
+            <div class="totalList">
+                <div class="list-title" id="listTitle"></div>
+                <ul class="list" id="list">
+                </ul>
+            </div>
+        </section>
     </div>
-</footer>
-<div class="page-mask"></div>
-<div id="detail"></div>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/all.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6O5DWpsOCvQWvGioTs0qGwNYrm0vXDrs"></script>
+    <footer class="footer">
+        <div class="footer-wrap">
+            <h3>資料來源：臺北市政府 </h3>
+            <h3>作者：Andy Tsai</h3>
+        </div>
+    </footer>
+    <div class="page-mask"></div>
+    <div id="detail"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6O5DWpsOCvQWvGioTs0qGwNYrm0vXDrs"></script>
 </body>
+
 </html>

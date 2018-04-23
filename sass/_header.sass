@@ -60,36 +60,40 @@
         justify-content: space-between
         max-width: 100%
         margin: 14px 0 0 0
+        .header-both-li
+            width: 50%
+            display: flex
+            justify-content: space-around
+            .header-hotAR-list-li
+                font-size: 20px
+                padding: 11px 0
+                color: #FFFFFF
+                background: #818181
+                border-radius: 5px
+                border: none
+                outline: none
+                cursor: pointer
+                width: 150px
 
-        .header-hotAR-list-li
-            font-size: 20px
-            padding: 11px 35px
-            color: #FFFFFF
-            background: #818181
-            border-radius: 5px
-            border: none
-            outline: none
-            cursor: pointer
+            .purple
+                background: #8A82CC
 
-        .purple
-            background: #8A82CC
+                &:hover
+                    filter: saturate(200%)
 
-            &:hover
-                filter: saturate(200%)
+            .pink
+                background: #FFA782
 
-        .pink
-            background: #FFA782
+                &:hover
+                    filter: saturate(200%)
 
-            &:hover
-                filter: saturate(200%)
+            .yellow
+                background: #F5D105
 
-        .yellow
-            background: #F5D105
+                &:hover
+                    filter: saturate(200%)
+            .blue
+                background: #559AC8
 
-            &:hover
-                filter: saturate(200%)
-        .blue
-            background: #559AC8
-
-            &:hover
-                filter: saturate(200%)
+                &:hover
+                    filter: saturate(200%)

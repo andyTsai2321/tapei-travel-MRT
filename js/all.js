@@ -5,7 +5,7 @@
 var xhr = new XMLHttpRequest();
 xhr.open('get', 'data/travel.json', true);
 xhr.send(null);
-xhr.onload = function() {
+xhr.onload = function () {
 
     dataResult = JSON.parse(xhr.responseText);
 
@@ -18,7 +18,7 @@ xhr.onload = function() {
 
     // 再用 foreach 去判斷陣列裡面所有值是否有吻合
     let area = [];
-    areaList.forEach(function(value) {
+    areaList.forEach(function (value) {
         if (area.indexOf(value) == -1) {
             area.push(value);
             // area.remove('null');
@@ -103,7 +103,7 @@ function updatedList(e) {
         list.innerHTML = str;
     }
     //詳細資料彈出視窗
-    $(document).on('click', '.list-box', function(event) {
+    $(document).on('click', '.list-box', function (event) {
         var myid = $(this).data('detail');
         let popup = '';
         for (let i = 0; dataResult.length > i; i++) {
@@ -141,8 +141,8 @@ function updatedList(e) {
                                     <div class="modal-content-block">
                                         <ul>
                                             <li><i class="fas fa-clock"></i><span class="modal-content-li">${dataOpenTime}</span></li>
-                                            <li><i class="fas fa-map-marker-alt"></i><span class="modal-content-li">${dataAddress}</span></li>
                                             <li><i class="fas fa-subway"></i><span class="modal-content-li">${dataInfo}</span></li>
+                                            <li><i class="fas fa-map-marker-alt"></i><span class="modal-content-li">${dataAddress}</span></li>
                                             <li><span id="map" class="map-style"></span></li>
                                         </ul>
                                     </div>
@@ -153,14 +153,14 @@ function updatedList(e) {
                 var xhr = new XMLHttpRequest();
                 xhr.open('get', 'js/googleApi.js', true);
                 xhr.send(null);
-                xhr.onload = function() {
+                xhr.onload = function () {
                     map = new google.maps.Map(document.getElementById('map'), {
-                        center: {lat: Number(dataMapLat), lng: Number(dataMapLng)},
+                        center: { lat: Number(dataMapLat), lng: Number(dataMapLng) },
                         zoom: 14
                     });
 
                     var marker = new google.maps.Marker({
-                        position: {lat: Number(dataMapLat), lng: Number(dataMapLng)},
+                        position: { lat: Number(dataMapLat), lng: Number(dataMapLng) },
                         map: map,
                         title: 'test',
                     })
@@ -200,7 +200,7 @@ function updatedList(e) {
         $('.container').addClass('blur');
         // return false;
         // 彈出視窗關閉按鈕
-        $(document).on('click', '.btn-close', function(e) {
+        $(document).on('click', '.btn-close', function (e) {
             $('.modal-wrapper').removeClass('open');
             $('.container').removeClass('blur');
         });
